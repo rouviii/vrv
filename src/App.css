@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --grey: #F5F5F5;
+  --black: #242D3B;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-size: 20px;
+}
+body {
+    background: var(--grey);
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+.mountain-container {
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+}
+.mountain-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.grey-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--grey);
+  opacity: 0.7;
+  z-index: -1;
+}
+.mountain-container p {
+  font-family: Poppins;
+  color: var(--black);
+  font-size: 3em;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+
+.intro {
+  height: auto;
+}
+.intro-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+}
+.intro-grid div {
+  padding: 20px;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-grid p {
+  font-family: Poppins;
+  font-size: 20px;
+}
+.values {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+}
+.value {
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  color: var(--black);
+}
+.value img {
+  height: auto;
+  width: 110px;
+  transform: translateY(-40%);
+}
+.value p {
+  margin: 0;
+  max-width: 500px;
+}
+@media screen and (max-width: 900px) {
+  .values {
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio {
+  background: var(--black);
+  height: 110vh;
+}
+.portfolio-text {
+  color: var(--grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.portfolio-grid {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+.portfolio-grid-item {
+  background: rgb(110, 110, 110);
+  height: 70vh;
+  flex: 1 1 0;
+  border-radius: 25px;
+}
